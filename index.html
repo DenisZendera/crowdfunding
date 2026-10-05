@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Crowdfunding product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miniver&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ 
+
+  <section class="page">
+    <header>
+      <nav>
+        <img src="images/logo.svg" alt="company logo" class="page-logo" draggable="false">
+
+        <button class="hum">
+          <img src="images/icon-hamburger.svg" alt="menu" class="hum-menu" draggable="false">
+        </button>
+
+        <div class="menu" >
+          <ul class="nav-list">
+            <li class="link-item"><a href="#" class="list-item">About</a></li>
+            <li class="link-item"><a href="#" class="list-item">Discover</a></li>
+            <li class="link-item"><a href="#" class="list-item">Get Started</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="card-1">
+        <div class="circle-log">
+          <img src="images/logo-mastercraft.svg" alt="" class="mastercraft">
+        </div>
+
+        <p class="title">Mastercraft Bamboo Monitor Riser</p>
+        <p class="description">
+          A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+        </p>
+
+        <div class="options">
+          <button class="back-btn">
+            Back this project
+          </button>
+
+          <button class="bookmark">
+            <div class="logo">
+              <img src="images/icon-bookmark.svg" alt="bookmark" draggable="false" id="logo">
+            </div>
+
+            <div class="text">
+              <p id="bookMark">Bookmark</p>
+            </div>
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="card-2">
+        <div class="stats">
+          <div class="card">
+            <p  class="card-title" id="current-total">$89,914</p>
+            <p class="card-footer" class="footer-total">of $100,000 backed</p>
+          </div>
+
+          <div class="card">
+            <p class="card-title" id="total-backers">5,007</p>
+            <p class="card-footer" id="footer-backers">total backers</p>
+          </div>
+
+          <div class="card">
+            <p class="card-title" id="days">56</p>
+            <p class="card-footer" class="footer-days">days left</p>
+          </div>
+        </div>
+        <div class="load-bar"></div>
+      </div>
+
+
+      <div class="card-3">
+        <div class="card3-content">
+          <p class="content-title">About this project</p>
+          <p class="content-description">
+            The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+            to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+            your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+          </p>
+
+          <div class="sub-card1">
+            <div class="sub-header">
+              <p class="sub-title">Bamboo Stand</p>
+              <p class="pledge">Pledge $25 or more</p>
+            </div>
+
+            <p class="sub-description">
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+              you’ll be added to a special Backer member list.
+            </p>
+
+            <div class="sub-footer">
+              <div class="footer-number">
+                <p class="left" id="card1-left">101</p>
+                <span class="small">left</span>
+              </div>
+             
+              <button class="footer-btn reward" id="reward-1">
+                Select Reward
+              </button>
+            </div>
+          </div>
+
+          <div class="sub-card1">
+            <div class="sub-header">
+              <p class="sub-title">Black Edition Stand</p>
+              <p class="pledge">Pledge $75 or more</p>
+            </div>
+
+            <p class="sub-description">
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+              member list. Shipping is included.
+            </p>
+
+            <div class="sub-footer">
+              <div class="footer-number">
+                <p class="left" id="card2-left">64</p>
+                <span class="small">left</span>
+              </div>
+             
+              <button class="footer-btn" id="reward-2">
+                Select Reward
+              </button>
+            </div>
+          </div>
+
+          <div class="sub-card1 unavailable">
+            <div class="sub-header">
+              <p class="sub-title">Mahogany Special Edition</p>
+              <p class="pledge">Pledge $200 or more</p>
+            </div>
+
+            <p class="sub-description">
+              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+              to our Backer member list. Shipping is included.
+            </p>
+
+            <div class="sub-footer">
+              <div class="footer-number">
+                <p class="left">0</p>
+                <span class="small">left</span>
+              </div>
+             
+              <button class="footer-btn unavailable-btn">
+                Out of tock
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-project">
+      <div class="back-content completed"></div>
+    </div>
+
+  </section>
+
+ 
+
+  <!-- Success modal end -->
+  <script src="main.js"></script>
+</body>
+</html>
